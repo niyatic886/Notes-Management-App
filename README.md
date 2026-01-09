@@ -32,23 +32,66 @@ git clone https://github.com/niyatic886/Notes-Management-App.git
 cd Notes-Management-App
 npm install
 
-## Component Breakdown
+Run the Application
+npm run dev
 
-### App.jsx
-Root component that manages notes state, loading state, and data persistence.
+Component Breakdown
+App.jsx
 
-### NoteForm.jsx
-Handles user input and validation for adding new notes.
+Root component responsible for managing application state, loading behavior, and data persistence.
 
-### NoteList.jsx
-Displays a list of notes.
+NoteForm.jsx
 
-### NoteItem.jsx
-Displays individual note details and handles deletion.
+Handles user input, form validation, and triggers note creation.
 
-### Loader.jsx
-Shows a loading indicator on initial render.
+NoteList.jsx
 
-### EmptyState.jsx
-Displays a message when no notes are available.
+Renders the list of notes passed from the parent component.
 
+NoteItem.jsx
+
+Displays individual note details and provides delete functionality.
+
+Loader.jsx
+
+Displays a loading indicator during the initial app load.
+
+EmptyState.jsx
+
+Shows a placeholder message when no notes are available.
+
+State Management Explanation
+
+All application state is centralized in App.jsx.
+
+Notes are stored as an array of objects containing:
+
+id
+
+title
+
+description
+
+date
+
+Adding and deleting notes updates the state using useState.
+
+State changes are synchronized with localStorage using useEffect.
+
+Data Persistence
+
+Notes are saved in the browser’s localStorage.
+
+Data persists across page refreshes.
+
+Notes are restored when the application loads.
+
+Assumptions & Limitations
+
+Single-user application
+
+No backend or authentication
+
+Notes can be added and deleted but not edited
+
+Data depends on browser localStorage
