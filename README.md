@@ -31,4 +31,24 @@ This application is designed to reflect real-world frontend development practice
 git clone https://github.com/niyatic886/Notes-Management-App.git
 cd Notes-Management-App
 npm install
-  
+
+## Component Breakdown
+
+### App.jsx
+Root component that manages notes state, loading state, and data persistence.
+
+### NoteForm.jsx
+Handles user input and validation for adding new notes.
+
+### NoteList.jsx
+Displays a list of notes.
+
+### NoteItem.jsx
+Displays individual note details and handles deletion.
+
+### Loader.jsx
+Shows a loading indicator on initial render.
+
+### EmptyState.jsx
+Displays a message when no notes are available.
+
