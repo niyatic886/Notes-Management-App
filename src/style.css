@@ -1,0 +1,173 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+.app {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.app h1,
+.app h2 {
+  text-align: center;
+}
+
+/* Form */
+.note-form {
+  background-color: #f3e2c7;
+  border: 1px solid #e0c49a;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px auto 20px;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #c7b08a;
+}
+
+.note-form button {
+  background-color: #c19a6b;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.btn-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-top: 6px;
+}
+
+/* Notes */
+.notes-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 60px; 
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.note-items {
+  background-color: #f5e6cc;
+  border: 3px solid #e0c49a;
+  border-radius: 12px;
+  padding: 16px 20px;
+  position: relative;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.delete-note-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.note-date {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #555;
+}
+
+.app-background {
+  min-height: 100vh;
+  background-image: url("./assets/bg3.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 🔥 KEY LINE */
+}
+
+.emptyNotes {
+  text-align: center;
+  font-size: 21px;
+  color: #1e1d1d;
+  margin-top: 30px;
+}
+
+.note-title {
+  word-break: break-word;
+  margin-bottom: 6px;
+}
+
+.note-description {
+  overflow: hidden;
+  line-clamp: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-word;
+}
+
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/* Loader spinner */
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dots-design {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 0 30px;
+}
+
+.dots-design span {
+  width: 13px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+
+
+
+
