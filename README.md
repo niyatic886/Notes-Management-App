@@ -1,16 +1,34 @@
-# React + Vite
+# Notes Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+The Notes Management App is a React-based application that enables users to create, view, and delete notes in a simple and intuitive interface.  
+The project demonstrates effective component-based architecture, centralized state management using React Hooks, and persistent data storage using the browser’s localStorage.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application is designed to reflect real-world frontend development practices with a focus on clarity, maintainability, and user experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technology Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js, JavaScript (ES6)
+- **State Management:** React Hooks (`useState`, `useEffect`)
+- **Persistence Layer:** Browser localStorage
+- **UI & Styling:** CSS, Material UI Icons
+- **Tools:** Git, GitHub, VS Code
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Project Setup
+
+### Prerequisites
+- Node.js (v16 or later)
+- npm
+
+### Installation
+
+```bash
+git clone https://github.com/niyatic886/Notes-Management-App.git
+cd Notes-Management-App
+npm install
+  
