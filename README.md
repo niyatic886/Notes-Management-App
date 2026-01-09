@@ -19,6 +19,27 @@ This application is designed to reflect real-world frontend development practice
 
 ---
 
+## Component Breakdown
+
+-**App.jsx:**
+Root component responsible for managing application state, loading behavior, and data persistence.
+
+-**NoteForm.jsx:**
+Handles user input, form validation, and triggers note creation.
+
+-**NoteList.jsx:**
+Renders the list of notes passed from the parent component.
+
+-**NoteItem.jsx:**
+Displays individual note details and provides delete functionality.
+
+-**Loader.jsx:**
+Displays a loading indicator during the initial app load.
+
+-**EmptyState.jsx:**
+Shows a placeholder message when no notes are available.
+
+
 ## Project Setup
 
 ### Prerequisites
@@ -35,30 +56,6 @@ npm install
 Run the Application
 npm run dev
 
-Component Breakdown
-App.jsx
-
-Root component responsible for managing application state, loading behavior, and data persistence.
-
-NoteForm.jsx
-
-Handles user input, form validation, and triggers note creation.
-
-NoteList.jsx
-
-Renders the list of notes passed from the parent component.
-
-NoteItem.jsx
-
-Displays individual note details and provides delete functionality.
-
-Loader.jsx
-
-Displays a loading indicator during the initial app load.
-
-EmptyState.jsx
-
-Shows a placeholder message when no notes are available.
 
 State Management Explanation
 
