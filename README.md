@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Notes Management App is a React-based application that enables users to create, view, and delete notes in a simple and intuitive interface.  
+The Notes Management App is a React-based application that enables users to create and delete notes in a simple and intuitive interface.  
 The project demonstrates effective component-based architecture, centralized state management using React Hooks, and persistent data storage using the browser’s localStorage.
 
 This application is designed to reflect real-world frontend development practices with a focus on clarity, maintainability, and user experience.
