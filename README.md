@@ -40,6 +40,35 @@ Displays a loading indicator during the initial app load.
 Shows a placeholder message when no notes are available.
 
 
+## State Management Explanation
+
+All application state is centralized in App.jsx.
+
+Notes are stored as an array of objects containing:id,title,description,date
+
+Adding and deleting notes updates the state using useState.
+
+State changes are synchronized with localStorage using useEffect.
+
+## Data Persistence
+
+Notes are saved in the browser’s localStorage.
+
+Data persists across page refreshes.
+
+Notes are restored when the application loads.
+
+## Assumptions & Limitations
+
+Single-user application
+
+No backend or authentication
+
+Notes can be added and deleted but not edited
+
+Data depends on browser localStorage
+
+
 ## Project Setup
 
 ### Prerequisites
@@ -57,38 +86,3 @@ Run the Application
 npm run dev
 
 
-State Management Explanation
-
-All application state is centralized in App.jsx.
-
-Notes are stored as an array of objects containing:
-
-id
-
-title
-
-description
-
-date
-
-Adding and deleting notes updates the state using useState.
-
-State changes are synchronized with localStorage using useEffect.
-
-Data Persistence
-
-Notes are saved in the browser’s localStorage.
-
-Data persists across page refreshes.
-
-Notes are restored when the application loads.
-
-Assumptions & Limitations
-
-Single-user application
-
-No backend or authentication
-
-Notes can be added and deleted but not edited
-
-Data depends on browser localStorage
