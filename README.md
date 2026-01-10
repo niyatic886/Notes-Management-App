@@ -9,6 +9,9 @@ This application is designed to reflect real-world frontend development practice
 
 ---
 
+🔗 **Demo Video**: [Demo Video](https://www.loom.com/share/ec1a479ae8444f26b3690c3b7b621f85)  
+📦 **GitHub Repo**: [GitHub Repo](https://github.com/niyatic886/Notes-Management-App)
+
 ## Technology Stack
 
 - **Frontend:** React.js, JavaScript (ES6)
